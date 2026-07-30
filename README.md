@@ -13,16 +13,33 @@ Personal portfolio site for Rajneesh Mishra, Full Stack Engineer.
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Build
+Open the URL Vite prints (usually `http://localhost:5173`).
+
+## Environment variables
+
+Copy `.env.example` to `.env` and adjust as needed:
+
+| Variable | Description |
+| --- | --- |
+| `VITE_RESUME_URL` | Public resume link (Google Drive URL or a path like `/resume.pdf`) |
+
+Restart the dev server after changing `.env`.
+
+On Vercel or Netlify, set the same `VITE_RESUME_URL` value in the project environment settings.
+
+## Scripts
 
 ```bash
-npm run build
-npm run preview
+npm run dev      # local development
+npm run build    # production build → dist/
+npm run preview  # preview the production build
+npm run lint     # run oxlint
 ```
 
-## Resume
+## Deploy
 
-Place your PDF at `public/resume.pdf` (a placeholder file is already linked).
+This is a static site. Deploy the Vite build output to Vercel or Netlify with no backend required.
