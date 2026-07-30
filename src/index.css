@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg-base: #f6f6f4;
+  --ink: #16213a;
+  --ink-soft: #4a5568;
+  --accent: #d98e04;
+  --accent-soft: #fcefd1;
+  --line: #e2e1dc;
+  --success: #2f855a;
+}
+
+.dark {
+  --bg-base: #12161f;
+  --ink: #edeef0;
+  --ink-soft: #a0aec0;
+  --accent: #d98e04;
+  --accent-soft: #3a2e14;
+  --line: #2a3040;
+  --success: #48bb78;
+}
+
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-line: var(--line);
+  --color-success: var(--success);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: Inter, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--bg-base);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
