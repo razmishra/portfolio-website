@@ -5,7 +5,7 @@ const logLines = [
   '> whoami: rajneesh_mishra',
   '> role: full_stack_engineer',
   '> based_in: noida, india',
-  '> years_experience: 2.5+',
+  '> years_experience: 3',
   '> stack: react, next.js, node.js, mongodb, redis, aws',
   '> live_products_shipped: 2 (500+ signups, 50K+ users, $300+)',
   '> currently: building things that hold up under real traffic',
