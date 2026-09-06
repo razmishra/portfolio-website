@@ -18,7 +18,7 @@ export default function About() {
           <p>
             Rajneesh is a full stack engineer who likes owning a problem end to end, from designing
             the database schema to shipping the UI that sits on top of it, and everything in between.
-            Over the last 2.5+ years he has built and scaled internal enterprise platforms used by
+            Over the last 3 years he has built and scaled internal enterprise platforms used by
             thousands of people daily, optimized backend performance under real production load, and
             mentored other engineers through code review and day to day collaboration.
           </p>
